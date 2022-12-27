@@ -1,1 +1,1 @@
-Python code to connect a MikroTik router via SSH
+Python code to connect and send commands to a MikroTik router via SSH
