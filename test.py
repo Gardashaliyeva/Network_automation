@@ -1,6 +1,6 @@
 from netmiko import ConnectHandler, NetmikoTimeoutException
 
-ip = str(input('Enter the device ip address: '))
+ip = str(input('\nEnter the device ip address: '))
 username = str(input('Enter the device name: '))
 password = str(input('Enter the device password: '))
 port = str(input('Enter the port number: '))
@@ -14,9 +14,9 @@ mikroTik = {
 }
 
 conn = ConnectHandler(**mikroTik)
-print('Connection established successfully with ', ip)
+print('\nConnection established successfully with ', ip)
 
-print("""
+print("""\n
 Choose a command:
     1. System reboot
     2. System shutdown
@@ -31,7 +31,7 @@ Choose a command:
     11. Change device name
     12. Change device password (firstly, device name must be changed)
     13. Other
-    14. Disconnect""")
+    14. Disconnect\n""")
 
 while True:
     choice = int(input('Enter your choice: '))
